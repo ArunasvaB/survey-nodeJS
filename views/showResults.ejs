@@ -1,0 +1,46 @@
+<html lang="en-US">
+<head>
+    <title>Survey Analysis</title>
+</head>
+
+<body>
+    <h1>Survey analysis</h1>
+    <h2> What font should we have used?</h2>
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <li><%= results[0][i].whatFonts %> :  <%= results[0][i].count %> person</li>
+    <% } %>    
+    </ul>
+    <h2>What color(s) do you like? </h2>
+    <ul>
+    <% for (var i=0; i<results[1].length; i++){ %>
+        <li><%= results[1][i].colours %> :  <%= results[1][i].count %> person</li>
+    <% } %>    
+    </ul>
+    <h2>What is your favorite feature?</h2>
+    <ul>
+    <% for (var i=0; i<results[2].length; i++){ %>
+        <li><%= results[2][i].ft %> :  <%= results[2][i].count %> person</li>
+    <% } %>    
+    </ul>
+    <h2>What design feature do you like? </h2>
+    <ul>
+        <% for (var i=0; i<results[3].length; i++){ %>
+            <li><%= results[3][i].design %> :  <%= results[3][i].count %> person</li>
+        <% } %>
+    </ul>
+    <h2>How would you rate our ease of use?</h2>
+    <ul>
+        <% for (var i=0; i<results[4].length; i++){ %>
+            <li><%= results[4][i].slider %>/100 :  <%= results[4][i].count %> person</li>
+        <% } %>
+    </ul>
+
+    <h2>How many colors should we have used?</h2>
+    <ul>
+        <% for (var i=0; i<results[5].length; i++){ %>
+            <li><%= results[5][i].color %> :  <%= results[5][i].count %> person</li>
+        <% } %>
+    </ul>
+</body>
+</html>

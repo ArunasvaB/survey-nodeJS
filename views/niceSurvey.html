@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>Questionnaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  </head>
+  
+  <body class="text-center">
+
+
+	<div class="container-md p-3 my-3 border bg-dark text-white" id="survey">
+      <h1 class="text-center">Survey Of Yahoo Answers</h1>
+      <br>
+      <img src="assets/yahoo.jpg"   height="700" width="1000">
+      <br>
+      <br>
+
+    <form>
+      <h2> What font should we have used?</h2>
+
+      <input type="text" name="whatFonts" placeholder="font name..." required />
+      <br>
+      <br>
+      <h2> What color(s) do you like? </h2>
+	    I like:<br>
+		  <input type="checkbox" name="colours[]" value="Red"> Purple<br>
+		  <input type="checkbox" name="colours[]" value="Green"> White<br>
+      <input type="checkbox" name="colours[]" value="Blue"> Blue<br>
+      <br>
+
+        <h2>What is your favorite feature?</h2>
+      I like:<br>
+      <select name="ft">
+			  <option value="Asking" selected="selected">Asking</option>
+			  <option value="Answering">Answering</option>
+			  <option value="Commenting">Commenting</option>
+      </select>
+
+        <br>
+        <br>
+      <h2> What design feature do you like? </h2>
+      I like:<br>
+      <input type="radio" name="design" value="Red"> White Space<br>
+      <input type="radio" name="design" value="Green"> Color Scheme<br>
+      <input type="radio" name="design" value="Blue"> Navigation<br>
+      <br>
+      <br>
+
+      <h2> How would you rate the ease of use? </h2>
+      <div class="slidecontainer">
+        <input type="range" name="slider" min="1" max="100" value="50" class="slider" id="myRange">
+      </div>
+      <br>
+      <br>
+
+      <h2> How many colors should we have used?</h2>
+      <input type="number" name="color" placeholder="Please enter a number sil vous plait" required />
+      <button type="submit" class="btn btn-warning" id="bb">Submit</button>
+    </form>
+    </div>
+	<script src="/assets/action.js"></script>
+  </body>
+</html> 
